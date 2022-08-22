@@ -18,5 +18,8 @@ app.get("/starwars", (req, res) => {
     })
 })
 
+app.get("/starwars/:id", (req,res) => {
+    res.send(req.params.id)
+})
 
 app.listen(3001)
